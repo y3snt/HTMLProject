@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACID</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+
+    <!-- Style CSS -->
+    <style>
+        /* Jezyk CSS */
+        /*
+        h1{
+            text-align: center;
+            font-weight: 500;
+            font-size: 10rem;
+            line-height: 1.4em;
+        }
+
+        section{
+            max-width: 1400px;
+            margin: auto;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+        section h2{
+            font-size: 4.5rem;
+            font-weight: 500;
+        }
+        section hr{
+            margin-bottom: 5.5rem;
+            border: 1px solid rgb(82, 82, 82);
+        }
+        section h3{
+            font-size: 3rem;
+            font-weight: 500;
+            margin-top: 5rem;
+        }
+
+        section a{
+            color: rgb(15, 255, 203);
+            font-size: 1.6rem;
+        }
+        section p{
+            margin-bottom: 3rem;
+        }
+
+        section article{
+            margin-bottom: 7rem;
+        }
+        
+        section article header{}
+        section article header h3{
+            margin-bottom: 0rem;
+        }
+        section article header h4{
+            margin-top: 1.5rem;
+            font-weight: 500;
+            color: rgb(185, 185, 185);
+        }
+        
+        section article main{}
+
+        section article main p{}
+        section article main h5{
+            font-size: 1.8rem;
+        }
+        section article main img{}
+        
+        section article footer{}
+        section article footer a{}
+
+        section article img{
+            border-radius: 10px;
+            width:50%; 
+            height:auto;
+        }
+
+        h6{
+            font-weight: 300;
+        }
+        
+        footer{
+            text-align: center
+        }*/
+        
+    </style>
+</head>
+
+<body>
+    <h1>ACID</h1>
+    <section>
+        <h2>Databse Transaction</h3>
+        <hr>
+        <p>
+            Transaction is a collection of queries treated as a one unit of work.
+        </p>
+        <h3>title 3</h3>
+        <p>
+            ...
+        </p>
+    </section>
+
+    <section>
+        <h2>4 ACID</h2>
+        <hr>
+        <article>
+            <header>
+                <h3>title 3</h3>
+                <h4>subtitle 4</h4>
+            </header>
+            <main>
+                <p><b>...</b></p>
+                <p>...</p>
+                <p><b>Example...</b></p>
+                <img src="./img/background.jpg">
+                <p>...</p>
+            </main>
+        </article>
+        <footer>
+            <a href="https://www.ideacto.pl/blog/10-heurystyk-uzytecznosci-jakoba-nielsena">Żródło</a>
+        </footer>
+    </section>
+    <section>
+        <div class="wrapper">
+            <form>
+                <h2>Contact me</h2> <!--TODO wrap in container or sth-->
+                <div class="input-field">
+                    <label>Name</label>
+                    <div class="input-box">
+                        <input type="text" placeholder="Name" name="name" autocomplete="name"> <!-- user dont have to specify name -->
+                        <i class='bx bxs-user' ></i>
+                        <!-- <i class='bx bx-user' ></i> -->
+                    </div>
+                    
+                </div>
+                <div class="input-field">
+                    <label>Email</label>
+                    <div class="input-box">
+                        <input type="text" placeholder="example@gmail.com" name="email" autocomplete="email" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" required>
+                        <i class='bx bxs-envelope'></i>
+                        <!-- <i class='bx bx-envelope'></i> -->
+                    </div>
+                </div>
+                <div class="input-textarea">
+                    <label>Message</label>
+                    <div class="input-box">
+                        <textarea placeholder="Type your message here..." name="message" required></textarea>
+                    </div>
+                </div>
+                <div class="field-upload-file">
+                    <input type="file" id="file-upload">  <!--TODO attach a virus-->
+                    <label for="file-upload" class="custom-form-button">
+                        <i class='bx bxs-file-plus'></i> Upload a file
+                    </label>
+                </div>
+                <footer>
+                    <div id="consent">
+                        <input type="checkbox" id="terms-and-conditions" required>
+                        <label for="terms-and-conditions">
+                            I agree to the
+                            <a href>Terms and Contitions</a> 
+                            and 
+                            <a href>Privacy Statement</a>.
+                        </label>
+                    </div>
+                    <div class="form-buttons">
+                        <input type="reset" value="Reset" id="reset-form">
+                        <label for="reset-form" class="custom-form-button">
+                            Reset
+                        </label>
+                        <input type="submit" value="Send" id="submit-form"> <!--TODO change language-->
+                        <label for="submit-form" class="custom-form-button">
+                            Send
+                        </label>
+                    </div>
+                </footer>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <h6>Dolesniak Magdalena, grupa 5 | &copy; 2024</h6>
+    </footer>
+</body>
+</html>
