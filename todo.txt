@@ -74,3 +74,9 @@ max-width: 1400px < - w container w css
 
 
 col-lg-6 - powyżej 990px
+
+
+--- fancy
+mouse
+section 1 - przezroczyste tło glow
+paralax + stars animation
