@@ -22,11 +22,7 @@
             font-weight: 500;
         }
 
-        section h3{
-            font-size: 3rem;
-            font-weight: 500;
-            margin-top: 5rem;
-        }
+        
 
         section a{
             color: rgb(15, 255, 203);
@@ -80,6 +76,27 @@
 
 <body>
         <h1>Gwiazdy</h1>
+        <section id="introduction-section">
+            <div class="text-wrapper">
+                <header>
+                    <h2>Jak powstaje gwiazda?</h3>
+                </header>
+                <main>
+                    <h3>Protogwiazda</h3>
+                    <p>
+                        Na początku chmura gazu i pyłu kosmicznego, składająca się w większości z wodoru,
+                        gromadzi się wokół przypadkowego zagęszczenia tworząc obłok. Na skutek grawitacji obłok kurczy się.
+                        Chmura gazu zaczyna coraz szybciej obracać się w okół własnej osi i powstaje protogwiazda.
+                    </p>
+                    <h3>Gwiazda</h3>
+                    <p>
+                        Gdy temperatura protogwiazdy osiągnie odpowiednio wysoką wartość, w jej centrum rozpoczyna się proces
+                        syntezy jąder wodoru w jądra helu. Energia wydzielana w tym procesie powstrzymuje grawitacyjne
+                        zapadanie. Gwiazda zaczyna jasno świecić.
+                    </p>
+                </main>
+            </div>
+        </section>
         <section id="gallery">
             <div class="container">
                 <div class="photo">
@@ -114,12 +131,36 @@
                 </div>
             </div>
         </section>
-        <section id="introduction-section">
+        <section id="column-section">
             <div class="text-wrapper">
-                <h2>Jak powstaje gwiazda?</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad recusandae laborum temporibus reprehenderit nulla numquam dolorem, quis illum dolore corporis hic asperiores voluptatibus voluptate mollitia cumque consequatur placeat dolores culpa.
-                </p>
+                <h2>Jak umiera gwiazda?</h2>
+                <!--
+                <header>
+                    <h3>title 3</h3>
+                    <h4>subtitle 4</h4>
+                </header> -->
+                <main>
+                    <div class="column">
+                        <h3>Małe i średnie gwiazdy</h3>
+                        <p>
+                            Małe gwiazdy stają się <b>brązowymi karłami</b>.
+                            W przypadku gwiazd średniej wielkości, np.: Słońca, 
+                            etapem poprzedzającym „śmierć” gwiazdy jest zamiana w <b>czerwonego olbrzyma</b>.
+                            Jego rozmiary wzrastają, aż do zrzucenia zewnętrznych warstw. Stopniowo stygnąc stanie się
+                            <b>białym karłem</b> – gwiazdą o rozmiarach Ziemi.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h3>Ogromne gwiazdy</h3>
+                        <p>
+                            Duże gwiazdy kończą swoje życie, kiedy wyczerpie się wodór. 
+                            Dochodzi wtedy do wybuchu <b>supernowej</b>. Następnie gwiazda przekształci się
+                            w <b>gwiazdę neutronową</b>, bądź zacznie zapadać się pod własnym ciężarem
+                            co doprowadzi do powstania <b>czarnej dziury</b>.
+                        </p>
+                    </div>
+                    <!--<img src="./img/background.jpg">-->
+                </main>
             </div>
         </section>
         <section id="cards">
@@ -144,27 +185,7 @@
                 </div>
             </div>
         </section>
-        <section>
-            <h2>4 ACID</h2>
-            <hr>
-            <article>
-                <header>
-                    <h3>title 3</h3>
-                    <h4>subtitle 4</h4>
-                </header>
-                <main>
-                    <p><b>...</b></p>
-                    <p>...</p>
-                    <p><b>Example...</b></p>
-                    <!--<img src="./img/background.jpg">-->
-                    <p>...</p>
-                </main>
-            </article>
-            <footer>
-                <a href="https://www.ideacto.pl/blog/10-heurystyk-uzytecznosci-jakoba-nielsena">Żródło</a>
-            </footer>
-        </section>
-        <section>
+        <section id="contact-form">
             <div class="wrapper">
                 <form>
                     <h3>Contact me</h3> <!--TODO wrap in container or sth-->
@@ -223,6 +244,7 @@
         </section>
         <footer>
             <h6>Dolesniak Magdalena, grupa 5 | &copy; 2024</h6>
+            <a href="https://www.ideacto.pl/blog/10-heurystyk-uzytecznosci-jakoba-nielsena">Żródło</a>
         </footer>
         <script type="text/javascript" src="vanilla-tilt.js"></script>
         <script type="text/javascript">
