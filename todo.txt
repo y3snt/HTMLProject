@@ -80,3 +80,5 @@ col-lg-6 - powyżej 990px
 mouse
 section 1 - przezroczyste tło glow
 paralax + stars animation
+title animation + margin!!!
+treść
