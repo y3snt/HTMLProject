@@ -193,13 +193,12 @@
         <section id="contact-form">
             <div class="wrapper">
                 <form>
-                    <h3>Contact me</h3> <!--TODO wrap in container or sth-->
+                    <h3>Kontakt</h3> <!--TODO wrap in container or sth-->
                     <div class="input-field">
-                        <label>Name</label>
+                        <label>Nazwa</label>
                         <div class="input-box">
-                            <input type="text" placeholder="Name" name="name" autocomplete="name"> <!-- user dont have to specify name -->
+                            <input type="text" placeholder="Nazwa" name="name" autocomplete="name"> <!-- user dont have to specify name -->
                             <i class='bx bxs-user' ></i>
-                            <!-- <i class='bx bx-user' ></i> -->
                         </div>
                         
                     </div>
@@ -208,39 +207,38 @@
                         <div class="input-box">
                             <input type="text" placeholder="example@gmail.com" name="email" autocomplete="email" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" required>
                             <i class='bx bxs-envelope'></i>
-                            <!-- <i class='bx bx-envelope'></i> -->
                         </div>
                     </div>
                     <div class="input-textarea">
-                        <label>Message</label>
+                        <label>Wiadomość</label>
                         <div class="input-box">
-                            <textarea placeholder="Type your message here..." name="message" required></textarea>
+                            <textarea placeholder="Napisz wiadomość tutaj..." name="message" required></textarea>
                         </div>
                     </div>
                     <div class="field-upload-file">
-                        <input type="file" id="file-upload">  <!--TODO attach a virus-->
+                        <input type="file" id="file-upload">
                         <label for="file-upload" class="custom-form-button">
-                            <div class="hover-element"><i class='bx bxs-file-plus' style="transition: 0s;"></i><p style="display:inline; transition: 0s;"> Upload a file</p></div>
+                            <div class="hover-element"><i class='bx bxs-file-plus' style="transition: 0s;"></i><p style="display:inline; transition: 0s;"> Załącz plik</p></div>
                         </label>
                     </div>
                     <footer>
                         <div id="consent">
                             <input type="checkbox" id="terms-and-conditions" required>
                             <label for="terms-and-conditions">
-                                I agree to the
-                                <a href>Terms and Contitions</a> 
-                                and 
-                                <a href>Privacy Statement</a>.
+                                Zapoznałem(am) się z
+                                <a href>Regulaminem</a> 
+                                oraz
+                                <a href>Polityką Prywatności</a>.
                             </label>
                         </div>
                         <div class="form-buttons">
                             <input type="reset" value="Reset" id="reset-form">
                             <label for="reset-form" class="custom-form-button" id="reset-button">
-                                Reset
+                                Zresetuj
                             </label>
-                            <input type="submit" value="Send" id="submit-form"> <!--TODO change language-->
+                            <input type="submit" value="Send" id="submit-form">
                             <label for="submit-form" class="custom-form-button" id="send-button">
-                                Send
+                                Wyślij
                             </label>
                         </div>
                     </footer>
