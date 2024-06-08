@@ -11,17 +11,20 @@
 
 html{
     font-family: "Poppins", "sans-serif";
-    /*font-size: 16px;  rozmiar bazowy */
     font-size: 10px;
     scroll-behavior: smooth;
 }
 
 body{
-    background-image: url('./img/background.jpg'); /* #1d1d1d; */
+    background-image: url('../img/background.jpg');
     color: #ffffff;
     font-size: 1.8rem;
-    /*line-height: 1.4em;*/
     min-height: 100vh;
+    font: inherit;
+}
+
+b {
+    font-weight: 600;
 }
 
 /* Form */
@@ -41,6 +44,7 @@ body{
     transition: 0s;
     margin-left: 4rem;
     margin-right: 4rem;
+    font-size: 1.8rem;
 }
 
 section .wrapper h3 {
@@ -147,7 +151,7 @@ input:-webkit-autofill:active {
 #consent {
     font-size: 16px;
     margin-left: .8rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 #consent a {
@@ -253,6 +257,7 @@ section{
 .container .card .content h3 {
     font-size: 2.4rem;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .container .card .content p {
