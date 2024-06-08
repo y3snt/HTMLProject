@@ -211,8 +211,8 @@ input:-webkit-autofill:active {
 
 /* Content */
 section{
+	scroll-margin-top: 10rem;/*menu nie zasłania treści sekcji*/
 	display: flex;
-	scroll-margin-top: 5.6rem;/*menu nie zasłania treści sekcji*/
     align-items: center;
     justify-content: center;
     margin: 10rem 0;
@@ -313,12 +313,10 @@ h1 {
 
 /* 2 Column */
 #column-section .text-wrapper main {
-    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
     gap: 50px;
-
 }
 
 #column-section .text-wrapper .column {
@@ -327,77 +325,6 @@ h1 {
     max-width: 500px;
 }
 
-
-@media screen and (max-width: 1600px) {
-    h1 {
-        font-size: 12rem;
-        margin: 15rem 0rem;
-    }   
-}
-
-@media screen and (max-width: 1200px) {
-    h1 {
-        font-size: 9rem;
-        margin: 10rem 0rem;
-    } 
-
-    .text-wrapper h2 {
-        font-size: 6rem;
-        margin-bottom: 9rem;
-        margin-top: 4rem;
-        transition: .5s;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .text-wrapper h2 {
-        font-size: 5.5rem;
-    }
-
-
-    #column-section .text-wrapper main {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    #column-section .text-wrapper .column {
-        max-width: none;
-    }
-}
-
-
-@media screen and (max-width: 650px) {
-    h1 {
-        font-size: 5rem;
-        margin-top: 2rem;
-        transition: .8s;
-    } 
-
-    .text-wrapper h2 {
-        font-size: 4.8rem;
-        transition: .3s;
-    }
-
-    .text-wrapper h3{
-        font-size: 3.5rem;
-        font-weight: 500;
-        margin-bottom: 1rem;
-    }
-
-    .text-wrapper {
-        transition: 0;
-    }
-
-    .text-wrapper p {
-        font-weight: 300;
-        margin-bottom: 4rem;
-    }
-
-    #introduction-section, #column-section {
-        padding: 7rem 6rem;
-    }
-    
-}
 
 
 /* Gallery */
@@ -454,4 +381,150 @@ h1 {
     #gallery .container::-webkit-scrollbar-thumb {
         width: 200px;
     }
+}
+
+
+/* Footer */
+
+h6{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 2rem;
+}
+
+footer{
+    text-align: center
+}
+
+/* Navbar desktop */
+
+nav{
+	background-color: rgba(0,0,0,0);
+    backdrop-filter: blur(30px);
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	padding: 3rem;
+	
+	position: sticky;
+	top: 0;
+    width: 100%;
+
+    z-index: 2;
+    font-size: 1.6rem;
+    font-weight: 600;
+    box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.671);
+}
+
+nav ol{
+	display: flex;
+	gap: 30px;
+	justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    transition: .0s ease-in;
+}
+
+nav ol li a{
+	color: rgba(255, 255, 255, 0.781);
+    text-decoration: none;
+}
+
+nav ol li a:hover{
+	background-color: #fff;
+	color: #333;
+    border-radius: 30px;
+    padding: 10px 14px;
+    transition: .5s;
+    box-shadow: 0px 0px 80px rgba(255, 255, 255, 0.849);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1600px) {
+    h1 {
+        font-size: 12rem;
+        margin: 15rem 0rem;
+    }   
+
+    nav ol{
+        gap: 30px;
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 9rem;
+        margin: 10rem 0rem;
+    } 
+
+    .text-wrapper h2 {
+        font-size: 6rem;
+        margin-bottom: 9rem;
+        margin-top: 4rem;
+        transition: .5s;
+    }
+
+    nav ol {
+        gap: 20px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .text-wrapper h2 {
+        font-size: 5.5rem;
+    }
+
+
+    #column-section .text-wrapper main {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #column-section .text-wrapper .column {
+        max-width: none;
+    }
+
+    nav ol {
+        background-color: aqua;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    h1 {
+        font-size: 5rem;
+        margin-top: 2rem;
+        transition: .8s;
+    } 
+
+    .text-wrapper h2 {
+        font-size: 4.8rem;
+        transition: .3s;
+    }
+
+    .text-wrapper h3{
+        font-size: 3.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .text-wrapper {
+        transition: 0;
+    }
+
+    .text-wrapper p {
+        font-weight: 300;
+        margin-bottom: 4rem;
+    }
+
+    #introduction-section, #column-section {
+        padding: 7rem 6rem;
+    }
+    
 }
