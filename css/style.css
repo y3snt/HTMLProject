@@ -462,6 +462,7 @@ nav ol li a:hover {
 }
 
 /* Navbar mobile */
+
 #top-navbar {
     position: fixed;
     top: 0;
@@ -641,6 +642,15 @@ nav ol li a:hover {
         width: 35px;
         height: 35px;
         padding: .8rem;
+    }
+
+    .wrapper .form-buttons .custom-form-button {
+        min-width: 13rem;
+    }
+
+    .wrapper {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     
 }
