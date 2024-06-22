@@ -27,6 +27,20 @@ b {
     font-weight: 600;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(255, 0, 179, 0.274), rgba(77, 0, 87, 0));
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(255, 0, 179, 0.616), rgba(77, 0, 87, 0));
+}
+
 /* Form */
 
 .wrapper {
@@ -210,8 +224,9 @@ input:-webkit-autofill:active {
 
 
 /* Content */
+
 section{
-	scroll-margin-top: 10rem;/*menu nie zasłania treści sekcji*/
+	scroll-margin-top: 10rem;
 	display: flex;
     align-items: center;
     justify-content: center;
@@ -220,6 +235,7 @@ section{
 
 
 /* Cards */
+
 #cards .container {
     position: relative;
     display: flex;
@@ -265,6 +281,7 @@ section{
 }
 
 /* Text Content */
+
 h1 {
     text-align: center;
     font-weight: 500;
@@ -312,10 +329,11 @@ h1 {
 
 #introduction-section {
     background-image: linear-gradient(90deg, rgba(255, 0, 179, 0.274), rgba(77, 0, 87, 0));
-    margin-top: 5rem;
+    margin-top: 0rem;
 }
 
-/* 2 Column */
+/* 2 Column Layout */
+
 #column-section .text-wrapper main {
     display: flex;
     justify-content: space-between;
@@ -324,7 +342,6 @@ h1 {
 }
 
 #column-section .text-wrapper .column {
-    /* background-color: rgb(255, 0, 0); */
     flex: 1;
     max-width: 500px;
 }
@@ -401,13 +418,14 @@ footer{
 }
 
 /* Navbar desktop */
+
 nav{
 	background-color: rgba(0,0,0,0);
     backdrop-filter: blur(30px);
 	display: flex;
 	align-items: center;
     justify-content: center;
-	padding: 3rem;
+	padding: 3.5rem;
 	
 	position: sticky;
 	top: 0;
@@ -464,7 +482,6 @@ nav ol li a:hover {
     height: 45px;
     fill: #e8eaed;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.178)); 
-    /*background: rgba(255, 255, 255, 0.315);*/
     padding: 10px;
     cursor: pointer;
 }
@@ -509,10 +526,6 @@ nav ol li a:hover {
     #navbar ol{
         gap: 30px;
         width: 75vw;
-    }
-
-    #introduction-section {
-        margin-top: 3rem;
     }
 }
 
